@@ -1,0 +1,130 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.map"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\shash\Documents\flutter\map-main\map\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\shash\Documents\flutter\map-main\map\android\app\src\debug\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-80
+16-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-81
+17-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-78
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+18-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
+19-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
+20
+21    <application
+22        android:name="android.app.Application"
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.6.0] C:\Users\shash\.gradle\caches\transforms-3\ce0abaeff802a2d721fffa5b8302adb4\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+26        android:label="Map" >
+27        <activity
+28            android:name="com.example.map.MainActivity"
+29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30            android:exported="true"
+31            android:hardwareAccelerated="true"
+32            android:launchMode="singleTop"
+33            android:theme="@style/LaunchTheme"
+34            android:windowSoftInputMode="adjustResize" >
+35
+36            <!--
+37                 Specifies an Android theme to apply to this Activity as soon as
+38                 the Android process has started. This theme is visible to the user
+39                 while the Flutter UI initializes. After that, this theme continues
+40                 to determine the Window background behind the Flutter UI.
+41            -->
+42            <meta-data
+43                android:name="io.flutter.embedding.android.NormalTheme"
+44                android:resource="@style/NormalTheme" />
+45
+46            <intent-filter>
+47                <action android:name="android.intent.action.MAIN" />
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+50            </intent-filter>
+51        </activity>
+52        <!--
+53             Don't delete the meta-data below.
+54             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+55        -->
+56        <meta-data
+57            android:name="flutterEmbedding"
+58            android:value="2" />
+59
+60        <provider
+60-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-19:20
+61            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+61-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-82
+62            android:authorities="com.example.map.flutter.image_provider"
+62-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-74
+63            android:exported="false"
+63-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+64            android:grantUriPermissions="true" >
+64-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+65            <meta-data
+65-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-18:75
+66                android:name="android.support.FILE_PROVIDER_PATHS"
+66-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-67
+67                android:resource="@xml/flutter_image_picker_file_paths" />
+67-->[:image_picker] C:\Users\shash\Documents\flutter\map-main\map\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-72
+68        </provider>
+69
+70        <service
+70-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
+71            android:name="com.lyokone.location.FlutterLocationService"
+71-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
+72            android:enabled="true"
+72-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
+73            android:exported="false"
+73-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+74            android:foregroundServiceType="location" />
+74-->[:location] C:\Users\shash\Documents\flutter\map-main\map\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
+75
+76        <uses-library
+76-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+77            android:name="androidx.window.extensions"
+77-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+80            android:name="androidx.window.sidecar"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\shash\.gradle\caches\transforms-3\c967659ed316dfdf38b3f52796285106\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+82
+83        <activity
+83-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\6b39e819e5b05a42879250b547e72eec\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+84            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+84-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\6b39e819e5b05a42879250b547e72eec\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+85            android:exported="false"
+85-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\6b39e819e5b05a42879250b547e72eec\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+86-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\6b39e819e5b05a42879250b547e72eec\transformed\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+87
+88        <meta-data
+88-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\486cd41b6cd3dc89a17316fedcbfd4f0\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+89            android:name="com.google.android.gms.version"
+89-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\486cd41b6cd3dc89a17316fedcbfd4f0\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+90            android:value="@integer/google_play_services_version" />
+90-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\shash\.gradle\caches\transforms-3\486cd41b6cd3dc89a17316fedcbfd4f0\transformed\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+91    </application>
+92
+93</manifest>
